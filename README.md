@@ -1,31 +1,40 @@
-using System;
-using System.Globalization;
+Soma e Média de Vetores em C#
 
-CultureInfo CI = CultureInfo.InvariantCulture;
+Este projeto foi desenvolvido como exercício de **Algoritmos / Lógica de Programação**, com o objetivo de praticar o uso de **vetores**, **laços de repetição** e **operações matemáticas** na linguagem **C#**.
 
 
-int N;
-Console.WriteLine("Quantas Notas serão digitadas ?");
-N = int.Parse(Console.ReadLine());
 
-double[] notas = new double [N];
+## 📌 Objetivo
 
-for (int i = 0; i < N; i++) 
-{
-    Console.WriteLine("Digite uma nota ");
-    notas[i] = double.Parse(Console.ReadLine(), CI);
+O programa realiza as seguintes tarefas:
 
-}
-Console.WriteLine();
-Console.WriteLine("Notas digitadas: ");
-for (int i = 0; i < N; i++) {
-    Console.WriteLine(notas[i].ToString("F1", CI));
-}
-double soma = 0.0;
-for (int i = 0; i < N; i++) {
-    soma += notas[i];
-}
+- Solicita ao usuário a quantidade de notas
+- Lê as notas digitadas e armazena em um vetor
+- Exibe todas as notas informadas
+- Calcula a soma dos valores
+- Calcula a média das notas
 
-double media = soma / N;
-Console.WriteLine("A soma dos valores: " + soma.ToString("F2", CI));
-Console.WriteLine("Média: " + media.ToString("F2", CI));
+
+
+## 🧠 Conceitos utilizados
+
+- Vetores (`double[]`)
+- Estrutura de repetição `for`
+- Entrada e saída de dados (`Console.ReadLine` / `Console.WriteLine`)
+- Conversão de tipos (`int.Parse`, `double.Parse`)
+- Formatação de números com `CultureInfo.InvariantCulture`
+
+
+
+## 🛠️ Tecnologias
+
+- Linguagem: C#
+- Plataforma: **.NET (Console Application)**
+
+
+
+## ▶️ Como executar o programa
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/Soma-e-M-dia-de-vetores.git
